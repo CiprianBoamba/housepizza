@@ -29,8 +29,27 @@
                 </div>
                 <div class="flex justify-center">
                   <p>{{$type}}--{{$base}}:price is{{$price}}</p>
-                  </div>
+                  
+                </div>
+                <div class="flex justify-center">
+                  @if($price>15)
+                  <p>this pizza is expensive</p>
+                  @else
+                  <p>good price for this pizza</p>
+                  @endif
+                </div>
+                <div class="flex justify-center">
+                 @unless($base=='cheesy crust')
+                 <p>don't have chessy crust</p>
+                 @endunless
+                </div>
+                <div class="flex justify-center">
+                @php
+$name='val';
+echo($name)
 
+                @endphp
+                </div>
             </div>
         </div>
     </body>
