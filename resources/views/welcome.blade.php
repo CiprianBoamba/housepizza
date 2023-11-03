@@ -21,9 +21,10 @@
                 <div class="flex justify-center">
                    <h1>Welcome main page</h1>
                 </div>
-                <h1 class="text-3xl font-bold ">
+                <h1 class="font-bold text-violet-700">
                     Hello world!
                   </h1>
+                  <a href="#" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
 
                
 

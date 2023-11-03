@@ -4,13 +4,16 @@
 <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen bg-dots-darker bg-center bg-gray-100 dark:bg-dots-lighter dark:bg-gray-900 selection:bg-red-500 selection:text-white">
           
 
-            <div class="max-w-7xl mx-auto p-6 lg:p-8">
+            <div class=" mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
-                   <h1>pizzas page</h1>
+                   <h1 class="underline text-gray-600">Pizzas List</h1>
                  
                 </div>
                 <div class="flex justify-center">
-                   <h1>pizzas list</h1>
+                 
+                   
+                <p>param-name:{{$name}}</p>
+                <p>param-age:{{$age}}</p>
                 </div>
               
                 <div class="flex justify-center">
@@ -36,6 +39,7 @@
                 @endif
                  </div>
                 @endforeach
+
                
             </div>
 </div>
