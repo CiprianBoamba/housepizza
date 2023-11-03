@@ -27,29 +27,31 @@
                 <div class="flex justify-center">
                    <h1>pizzas list</h1>
                 </div>
+              
                 <div class="flex justify-center">
-                  <p>{{$type}}--{{$base}}:price is{{$price}}</p>
-                  
-                </div>
-                <div class="flex justify-center">
-                  @if($price>15)
-                  <p>this pizza is expensive</p>
-                  @else
-                  <p>good price for this pizza</p>
-                  @endif
-                </div>
-                <div class="flex justify-center">
-                 @unless($base=='cheesy crust')
-                 <p>don't have chessy crust</p>
-                 @endunless
-                </div>
-                <div class="flex justify-center">
-                @php
-$name='val';
-echo($name)
+                <!-- @for($i=0 ;$i <= 5; $i++)
+                <p>the value of i is {{$i}}</p>
+                @endfor -->
 
-                @endphp
+                 @for($i=0 ; $i < count($pizzas); $i++)
+                <p>type is: {{$pizzas[$i]['type']}} </p>
+                @endfor
+
+              
                 </div>
+
+                @foreach($pizzas as $pizza)
+                <div>
+                {{$loop-> index}} {{$pizza['type']}} - {{$pizza['base']}}
+                @if($loop->first)
+                <span>first in the loop</span>
+                @endif
+                @if($loop->last)
+                <span>last in the loop</span>
+                @endif
+                 </div>
+                @endforeach
+               
             </div>
         </div>
     </body>
