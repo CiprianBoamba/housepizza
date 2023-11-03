@@ -22,11 +22,15 @@
             <div class="max-w-7xl mx-auto p-6 lg:p-8">
                 <div class="flex justify-center">
                    <h1>pizzas page</h1>
+                 
                 </div>
+                <div class="flex justify-center">
+                   <h1>pizzas list</h1>
+                </div>
+                <div class="flex justify-center">
+                  <p>{{$type}}--{{$base}}:price is{{$price}}</p>
+                  </div>
 
-               
-
-             
             </div>
         </div>
     </body>
