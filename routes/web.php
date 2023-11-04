@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::get('/pizzas', function () {
     // get data from db
     $pizzas = [
@@ -29,5 +30,13 @@ Route::get('/pizzas', function () {
     'name' => request('name'),
     'age' => request('age'),
     ]);
+  
+});
+
+Route::get('/pizzas/{id}', function ($id) {
+    //use the $id variable to query the db for a record
+   
+
+    return view('details',['id' => $id]);
   
 });
